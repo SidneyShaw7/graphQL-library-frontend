@@ -3,7 +3,7 @@ import Authors from './components/Authors'
 import Books from './components/Books'
 import NewBook from './components/NewBook'
 import { useQuery } from '@apollo/client'
-import { ALL_AUTHORS, ALL_BOOKS, ALL_DATA } from './queries'
+import { ALL_DATA } from './queries'
 
 const App = () => {
   const [page, setPage] = useState('authors')
