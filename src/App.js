@@ -8,7 +8,9 @@ import { ALL_DATA } from './queries'
 const App = () => {
   const [page, setPage] = useState('authors')
 
-  const result = useQuery(ALL_DATA)
+  const result = useQuery(ALL_DATA, {
+    // pollInterval: 2000,
+  })
   console.log(result)
 
   if (result.loading) {
