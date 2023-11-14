@@ -1,4 +1,5 @@
 import SetBirthyear from './SetBirthyear'
+import Select from 'react-select'
 
 const Authors = ({ show, authors }) => {
   if (!show) {
@@ -25,7 +26,7 @@ const Authors = ({ show, authors }) => {
           ))}
         </tbody>
       </table>
-      <SetBirthyear />
+      <SetBirthyear authors={authors} />
     </div>
   )
 }
